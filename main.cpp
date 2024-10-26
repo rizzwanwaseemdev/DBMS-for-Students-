@@ -155,8 +155,14 @@ void deleteRecord() {
         cin >> x;
 
         if (x == 1) {
-            total = 0;
-            cout << "All data records DELETED!" << endl;
+            int choice;
+            cout<<"\nAre you sure you want to delete ALL data records?"<<endl;
+            cout<<"Press 1 for YES / Press 0 for NO"<<endl;
+            cin>>choice;
+            if(choice == 1){
+                total = 0;
+                cout << "\nAll data records DELETED!" <<endl;
+            }
         } else if (x == 2) {
             string rollNum;
             cout << "Enter Roll number of the student whose data you want to delete: ";
