@@ -207,6 +207,7 @@ int main() {
                 deleteRecord();
                 break;
             case 6:
+                cout<<"Exiting Program..."<<endl;
                 exit(0);
                 break;
             default:
